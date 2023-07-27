@@ -36,6 +36,7 @@
         }
         .containers{
           width: calc(100% - 240px);
+          /* max-width: 1440px; */
         }
         /* banner */
         .banner-1{
@@ -108,9 +109,9 @@
       </nav>
        <!-- this is nav-bar end -->
        <!-- this is banner-section -->
-       <div class="carousel w-full">
+       <div class="carousel w-full ">
         <div id="slide1" class="carousel-item relative w-full">
-          <div class="banner-1 text-center">
+          <div class="banner-1 text-center ">
             <!-- <div class="hero-overlay bg-opacity-60"></div> -->
             <div class="pt-20 pb-40">
           <h1 class="text-7xl font-bold">Exotic tastes at your <br>
@@ -167,6 +168,32 @@
           </div>
         </div>
       </div>
+      <!-- <div class="w-[976px]  mx-auto shadow-sm">
+        <div class="flex justify-around items-center ">
+          <div class="text-center">
+            <img src="images/fruit1.png" alt="">
+            <p class="text-[#121212CC] text-xl">Strawberry</p>
+          </div>
+          <div class="text-center">
+            <img src="images/fruit2.png" alt="">
+            <p class="text-[#121212CC] text-xl">Strawberry</p>
+          </div>
+          <div class="text-center">
+            <img src="images/fruit3.png" alt="">
+            <p class="text-[#121212CC] text-xl">Strawberry</p>
+          </div>
+          <div class="text-center">
+            <img src="images/fruit1.png" alt="">
+            <p class="text-[#121212CC] text-xl">Strawberry</p>
+          </div>
+          <div class="text-center">
+            <img src="images/fruit4.png" alt="">
+            <p class="text-[#121212CC] text-xl">Strawberry</p>
+          </div>
+          
+        
+        </div>
+      </div> -->
 
     </header>
     <main class=" text-white containers mx-auto">
@@ -231,7 +258,7 @@
           <figure><img src="images/fruit6.png" alt="Shoes" /></figure>
           <div class="card-body text-center">
             <span class="text-[#121212] text-xl font-bold border-b-2 pb-2">12.90$ - 18.85$</span>
-            <p class="text-[#12121299] flex-grow-0">Orange</p>
+            <p class="text-[#12121299] flex-grow-0">Apple</p>
             <div class="pb-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none" class=" mx-auto">
                 <path d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z" fill="#F85559"/>
@@ -243,7 +270,36 @@
               </svg>
             </div>
               <div>
-                <span class="text-[#F85559] text-lg font-bold ">Details</span>
+
+                <!-- <span class="text-[#F85559] text-lg font-bold ">Details</span> -->
+                <!-- modal -->
+                <!-- Open the modal using ID.showModal() method -->
+          <button class="" onclick="my_modal_1.showModal()"> <span class="text-[#F85559] text-lg font-bold ">Details</span></button>
+          <dialog id="my_modal_1" class="modal">
+            <form method="dialog" class="modal-box">
+              <figure><img src="images/fruit6.png" alt="Shoes" /></figure>
+              <div class="card-body text-center">
+                <span class="text-[#121212] text-xl font-bold border-b-2 pb-2">12.90$ - 18.85$</span>
+                <p class="text-[#12121299] flex-grow-0">Apple</p>
+                <div class="pb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none" class=" mx-auto">
+                    <path d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z" fill="#F85559"/>
+                    <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                    <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                    <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                    <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                    <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                  </svg>
+          <div class="pt-4 flex gap-5 justify-center">
+      <!-- if there is a button in form, it will close the modal -->
+         <button class="text-xl px-3 py-2 rounded-lg text-[#180e0e] border ">close</button>
+         <button class=" text-white text-xl bg-[#F85559] border-0 px-3 py-2 rounded-lg">Buy Now</button>
+
+         </div>
+         </form>
+</dialog>
+
+
               </div>  
           </div>
         </div>
@@ -265,7 +321,39 @@
               </svg>
             </div>
               <div>
-                <span class="text-[#F85559] text-lg font-bold ">Details</span>
+                <div>
+
+                  <!-- <span class="text-[#F85559] text-lg font-bold ">Details</span> -->
+                  <!-- modal -->
+                  <!-- Open the modal using ID.showModal() method -->
+            <button class="" onclick="my_modal_2.showModal()"> <span class="text-[#F85559] text-lg font-bold ">Details</span></button>
+            <dialog id="my_modal_2" class="modal">
+              <form method="dialog" class="modal-box">
+                <figure><img src="images/fruit7.png" alt="Shoes" /></figure>
+                <div class="card-body text-center">
+                  <span class="text-[#121212] text-xl font-bold border-b-2 pb-2">12.90$ - 18.85$</span>
+                  <p class="text-[#12121299] flex-grow-0">Orange</p>
+                  <div class="pb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none" class=" mx-auto">
+                      <path d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z" fill="#F85559"/>
+                      <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                      <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                      <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                      <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                      <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                    </svg>
+            <div class="pt-4 flex gap-5 justify-center">
+        <!-- if there is a button in form, it will close the modal -->
+           <button class="text-xl px-3 py-2 rounded-lg text-[#180e0e] border ">close</button>
+           <button class=" text-white text-xl bg-[#F85559] border-0 px-3 py-2 rounded-lg">Buy Now</button>
+  
+           </div>
+           </form>
+  </dialog>
+  
+  
+                </div>  
+
               </div>  
           </div>
         </div>
@@ -275,7 +363,7 @@
           <figure><img src="images/fruit8.png" alt="Shoes" /></figure>
           <div class="card-body text-center">
             <span class="text-[#121212] text-xl font-bold border-b-2 pb-2">12.90$ - 18.85$</span>
-            <p class="text-[#12121299] flex-grow-0">Orange</p>
+            <p class="text-[#12121299] flex-grow-0">Red Dragon</p>
             <div class="pb-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none" class=" mx-auto">
                 <path d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z" fill="#F85559"/>
@@ -287,7 +375,39 @@
               </svg>
             </div>
               <div>
-                <span class="text-[#F85559] text-lg font-bold ">Details</span>
+                <div>
+
+                  <!-- <span class="text-[#F85559] text-lg font-bold ">Details</span> -->
+                  <!-- modal -->
+                  <!-- Open the modal using ID.showModal() method -->
+            <button class="" onclick="my_modal_3.showModal()"> <span class="text-[#F85559] text-lg font-bold ">Details</span></button>
+            <dialog id="my_modal_3" class="modal">
+              <form method="dialog" class="modal-box">
+                <figure><img src="images/fruit8.png" alt="Shoes" /></figure>
+                <div class="card-body text-center">
+                  <span class="text-[#121212] text-xl font-bold border-b-2 pb-2">12.90$ - 18.85$</span>
+                  <p class="text-[#12121299] flex-grow-0">Red Dragon</p>
+                  <div class="pb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none" class=" mx-auto">
+                      <path d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z" fill="#F85559"/>
+                      <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                      <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                      <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                      <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                      <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                    </svg>
+            <div class="pt-4 flex gap-5 justify-center">
+        <!-- if there is a button in form, it will close the modal -->
+           <button class="text-xl px-3 py-2 rounded-lg text-[#180e0e] border ">close</button>
+           <button class=" text-white text-xl bg-[#F85559] border-0 px-3 py-2 rounded-lg">Buy Now</button>
+  
+           </div>
+           </form>
+  </dialog>
+  
+  
+                </div>  
+
               </div>  
           </div>
         </div>
@@ -297,7 +417,7 @@
           <figure><img src="images/fruit9.png" alt="Shoes" /></figure>
           <div class="card-body text-center">
             <span class="text-[#121212] text-xl font-bold border-b-2 pb-2">12.90$ - 18.85$</span>
-            <p class="text-[#12121299] flex-grow-0">Orange</p>
+            <p class="text-[#12121299] flex-grow-0">Banana</p>
             <div class="pb-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none" class=" mx-auto">
                 <path d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z" fill="#F85559"/>
@@ -309,7 +429,39 @@
               </svg>
             </div>
               <div>
-                <span class="text-[#F85559] text-lg font-bold ">Details</span>
+                <div>
+
+                  <!-- <span class="text-[#F85559] text-lg font-bold ">Details</span> -->
+                  <!-- modal -->
+                  <!-- Open the modal using ID.showModal() method -->
+            <button class="" onclick="my_modal_4.showModal()"> <span class="text-[#F85559] text-lg font-bold ">Details</span></button>
+            <dialog id="my_modal_4" class="modal">
+              <form method="dialog" class="modal-box">
+                <figure><img src="images/fruit9.png" alt="Shoes" /></figure>
+                <div class="card-body text-center">
+                  <span class="text-[#121212] text-xl font-bold border-b-2 pb-2">12.90$ - 18.85$</span>
+                  <p class="text-[#12121299] flex-grow-0">banana</p>
+                  <div class="pb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none" class=" mx-auto">
+                      <path d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z" fill="#F85559"/>
+                      <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                      <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                      <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                      <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                      <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                    </svg>
+            <div class="pt-4 flex gap-5 justify-center">
+        <!-- if there is a button in form, it will close the modal -->
+           <button class="text-xl px-3 py-2 rounded-lg text-[#180e0e] border ">close</button>
+           <button class=" text-white text-xl bg-[#F85559] border-0 px-3 py-2 rounded-lg">Buy Now</button>
+  
+           </div>
+           </form>
+  </dialog>
+  
+  
+                </div>  
+
               </div>  
           </div>
         </div>
